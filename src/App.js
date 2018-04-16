@@ -18,7 +18,7 @@ class App extends Component {
                 <dt>Steemit</dt>
                 <dd><a href="https://steemit.com/@lepetitbloc">https://steemit.com/@lepetitbloc</a></dd>
                 <dt>Discord</dt>
-                <dd><a href="https://t.co/Uruxhq1nJs">https://t.co/Uruxhq1nJs</a></dd>
+                <dd><a href="https://discordapp.com/invite/PhdnNnf">https://discordapp.com/invite/PhdnNnf</a></dd>
                 <dt>Mail</dt>
                 <dd><a href="mailto:bonjour@lepetitbloc.net?subject=Bonjour%20Le%20Petit%20Bloc">bonjour@lepetitbloc.net</a></dd>
             </dl>
