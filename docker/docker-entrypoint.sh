@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-if [ ! -f package-lock.json ]; then
+if [ ! -f yarn.lock ]; then
     yarn install
     yarn start
 else

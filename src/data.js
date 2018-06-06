@@ -57,7 +57,7 @@ export default {
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> Mars 2018
+            <i className="fas fa-calendar-alt"></i> Avril 2018
           </small>
 
           <p>
@@ -167,7 +167,7 @@ export default {
       name: 'Alexandre "pocky" BALMES',
       infos: [
         "Software consultant",
-        "In love with DDD and PHP",
+        "In love with DDD and quality",
         "Happy husband and father"
       ],
       social: [
@@ -185,7 +185,7 @@ export default {
       name: 'Johan "lutangar" DUFOUR',
       infos: [
         "Full-stack senior Web developer",
-        "In love with React",
+        "In love with dApps",
         "Happy gardener"
       ],
       social: [
