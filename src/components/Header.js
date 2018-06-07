@@ -2,6 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 class Header extends React.Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    baseline: PropTypes.string.isRequired,
+  };
+
   render() {
     return (
       <header>
@@ -11,10 +16,5 @@ class Header extends React.Component {
     );
   }
 }
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-  baseline: PropTypes.string.isRequired,
-};
 
 export default Header;

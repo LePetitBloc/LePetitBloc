@@ -3,12 +3,20 @@ import PropTypes from "prop-types";
 import Social from "./Social";
 
 class People extends React.Component {
+  static propTypes = {
+    picture: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    infos: PropTypes.array.isRequired,
+    social: PropTypes.array.isRequired,
+    email: PropTypes.string.isRequired,
+  };
+
   render() {
     return (
       <div className="card testimonial-card mt-5">
         <div className="card-up" style={ this.props.style }>
           <div className="avatar">
-            <img src={ this.props.picture } className="rounded-circle" />
+            <img src={ this.props.picture } alt={this.props.name} className="rounded-circle" />
           </div>
         </div>
 
@@ -36,13 +44,5 @@ class People extends React.Component {
     );
   }
 }
-
-People.propTypes = {
-  picture: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  infos: PropTypes.array.isRequired,
-  social: PropTypes.array.isRequired,
-  email: PropTypes.string.isRequired,
-};
 
 export default People;

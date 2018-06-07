@@ -37,16 +37,29 @@ export default {
 
   timecard: [
     {
+      position: "timeline-inverted",
       badge: "fas fa-link",
       color: "warning",
       title: "New website",
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> June 2018
+            <i className="fas fa-calendar-alt"> </i> June 2018
           </small>
 
           <p>After six months with a simple Html page with no stylesheets, we finally have a new website!</p>
+        </Fragment>
+    },
+    {
+      badge: "fab fa-github",
+      title: "Default git template and truffle stack",
+      content:
+        <Fragment>
+          <small className="text-muted">
+            <i className="fas fa-calendar-alt"> </i> May 2018
+          </small>
+
+          <p>Alexandre release some tools for our projects and our external audits on "Smart Contracts".</p>
         </Fragment>
     },
     {
@@ -57,11 +70,11 @@ export default {
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> Avril 2018
+            <i className="fas fa-calendar-alt"> </i> Avril 2018
           </small>
 
           <p>
-            After many discussions, we refined our ideas and found our purpose:
+            We refined our ideas and found our purpose:
           </p>
 
           <ol>
@@ -72,42 +85,32 @@ export default {
         </Fragment>
     },
     {
-      badge: "fab fa-github",
-      title: "Default git template and truffle stack",
+      position : "timeline-inverted",
+      badge: "fas fa-briefcase",
+      title: "First consulting mission",
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> Mars 2018
+            <i className="fas fa-calendar-alt"> </i> Mars 2018
           </small>
 
-          <p>Alexandre release some tools for our projects and our external audits on "Smart Contracts".</p>
+          <p>
+            Alexandre advise a french company to help them build the decentralization part of their project for
+            a <abbr title="Banque Publique d'Investissement">BPI</abbr> challenge.
+          </p>
         </Fragment>
     },
     {
-      position : "timeline-inverted",
       badge: "fab fa-github",
       title: "First pull request on Bitcoin for Johan",
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> Mars 2018
+            <i className="fas fa-calendar-alt"> </i> Mars 2018
           </small>
 
           <p>Johan release his dynamic build tool for wallet and masternode and he made his
             first pull-request on Bitcoin.</p>
-        </Fragment>
-    },
-    {
-      position : "",
-      badge: "fab fa-github",
-      title: "Release of our old projects",
-      content:
-        <Fragment>
-          <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> February 2018
-          </small>
-
-          <p>Almost all of our personals projects are on Github!</p>
         </Fragment>
     },
     {
@@ -118,11 +121,11 @@ export default {
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> February 2018
+            <i className="fas fa-calendar-alt"> </i> February 2018
           </small>
 
           <p>
-            Our first public talk about "Le Petit Bloc". At this moment, we are just a startup studio for blockchain projects.
+            First public talk about "Le Petit Bloc", a startup studio for blockchain projects.
           </p>
         </Fragment>
     },
@@ -130,14 +133,14 @@ export default {
       position : "timeline-inverted",
       color: "warning",
       badge: "fab fa-github",
-      title: "Creation of our Github account",
+      title: "Hello Github!",
       content:
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"></i> December 2017
           </small>
 
-          <p>Hello <a href="https://github.com/LePetitBloc" target="_blank">Github</a>!</p>
+          <p>Because we <span role="img" aria-label="love">❤️</span> Open Source.</p>
         </Fragment>
     },
     {
@@ -148,12 +151,42 @@ export default {
       content:
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> September 2017
+            <i className="fas fa-calendar-alt"> </i> September 2017
           </small>
 
           <p>
-            After a year of experimentation, Johan and Alexandre started to talk about a common project about "something"
+            Johan and Alexandre start talking about a common project around an agency
             in the blockchain economy. Codename: "dotchain".
+          </p>
+        </Fragment>
+    },
+    {
+      position : "timeline-inverted",
+      badge: "fas fa-briefcase",
+      title: "Beyond The Void",
+      content:
+        <Fragment>
+          <small className="text-muted">
+            <i className="fas fa-calendar-alt"> </i> Janvier 2017
+          </small>
+
+          <p>
+            Johan start working with <a href="https://beyond-the-void.net/">Beyond The Void</a>, the first french ICO on Ethereum.
+          </p>
+        </Fragment>
+    },
+    {
+      badge: "fas fa-briefcase",
+      title: "First dApp for Johan",
+      content:
+        <Fragment>
+          <small className="text-muted">
+            <i className="fas fa-calendar-alt"> </i> December 2016
+          </small>
+
+          <p>
+            First Proof Of Concept with web3, React, Redux and redux-saga.<br />
+            <a href="https://github.com/lutangar/ethereact">Ethereact</a>
           </p>
         </Fragment>
     },

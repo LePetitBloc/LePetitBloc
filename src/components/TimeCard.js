@@ -2,6 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 
 class TimeCard extends React.Component {
+  static propTypes = {
+    inversed: PropTypes.string,
+    color: PropTypes.string,
+    badge: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    content: PropTypes.node.isRequired,
+  };
+
+  static defaultProps = {
+    position: "",
+    color: "",
+  };
+
   render() {
     return (
       <li className={ this.props.position }>
@@ -18,18 +31,5 @@ class TimeCard extends React.Component {
     );
   }
 }
-
-TimeCard.defaultPros = {
-  position: "",
-  color: "",
-};
-
-TimeCard.propTypes = {
-  inversed: PropTypes.string,
-  color: PropTypes.string,
-  badge: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  content: PropTypes.node.isRequired,
-};
 
 export default TimeCard;

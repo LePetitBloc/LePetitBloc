@@ -86,9 +86,13 @@ header em {
     position: relative;
 }
 
+.timeline a {
+    color: #0056b3;
+}
+
 .timeline:before {
     top: 0;
-    bottom: 59px;
+    bottom: 37px;
     position: absolute;
     content: " ";
     width: 3px;
