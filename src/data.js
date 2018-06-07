@@ -93,7 +93,7 @@ export default {
             <i className="fas fa-calendar-alt"></i> Mars 2018
           </small>
 
-          <p>Johan release his dynamic build tool for wallet and masternode and he made this
+          <p>Johan release his dynamic build tool for wallet and masternode and he made his
             first pull-request on Bitcoin.</p>
         </Fragment>
     },

@@ -1,5 +1,5 @@
 DOCKER_COMPOSE = docker-compose
-YARN = $(DOCKER_COMPOSER) exec app yarn
+YARN = $(DOCKER_COMPOSE) exec app yarn
 
 ##
 ##Project
