@@ -10,22 +10,22 @@ export default {
   social: [
     {
       icon: "fab fa-twitter",
-      title: "Link to our Twitter account",
+      title: "LePetitBloc on Twitter",
       href: "https://twitter.com/lepetitbloc"
     },
     {
       icon: "fab fa-github",
-      title: "Link to our Github account",
+      title: "LePetitBloc on Github",
       href: "https://github.com/lepetitbloc"
     },
     {
       icon: "fab fa-docker",
-      title: "Link to our Docker account",
+      title: "LePetitBloc on DockerHub",
       href: "https://hub.docker.com/u/lepetitbloc/"
     },
     {
       icon: "fab fa-discord",
-      title: "Link to our Discord account",
+      title: "Join LePetitbloc on Discord",
       href: "https://discordapp.com/invite/PhdnNnf"
     },
     {
@@ -64,7 +64,7 @@ export default {
           </small>
 
           <p>
-            Alexandre release some tools for our projects and our external
+            Alexandre release tools for projects and external
             audits on "Smart Contracts".
           </p>
         </Fragment>
@@ -81,19 +81,20 @@ export default {
             <i className="fas fa-calendar-alt"> </i> Avril 2018
           </small>
 
-          <p>We refined our ideas and found our purpose:</p>
+          <p>Le Petit Bloc found its purpose:</p>
 
           <ol>
             <li>
-              Le Petit Bloc is not only a "blockchain company". Decentralization
-              is the word!
+              Le Petit Bloc is not another <em>blockchain company</em>.
             </li>
             <li>
-              We have our own ideas on Governance, Knowledge and Economy. We
-              want to work on theses topics!
+              <strong>Decentralization</strong> is the key!
             </li>
             <li>
-              Our role is to help and build a Software Craftsmanship
+              Governance, Knowledge and Economy are the topics and we have convictions.
+            </li>
+            <li>
+              Here to help and build a Software Craftsmanship
               organization.
             </li>
           </ol>
@@ -111,7 +112,7 @@ export default {
           </small>
 
           <p>
-            Alexandre advise a french company to help them build the
+            Alexandre work as an advisor for a french company and help them build the
             decentralization part of their project for a{" "}
             <abbr title="Banque Publique d'Investissement">BPI</abbr> challenge.
           </p>
@@ -120,7 +121,7 @@ export default {
     },
     {
       badge: "fab fa-github",
-      title: "First pull request on Bitcoin for Johan",
+      title: "First pull request on Bitcoin",
       content: (
         <Fragment>
           <small className="text-muted">
