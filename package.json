@@ -5,6 +5,7 @@
   "homepage": "https://lepetitbloc.net",
   "dependencies": {
     "gh-pages": "^1.1.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
@@ -15,6 +16,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write src/**/*.js src/*.js"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.4"
   }
 }

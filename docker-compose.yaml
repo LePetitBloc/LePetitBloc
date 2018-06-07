@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/srv/app:rw
+    ports:
+      - '8081:3000'

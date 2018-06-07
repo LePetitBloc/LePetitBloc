@@ -1,53 +1,71 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import Social from "./components/Social";
+
+import People from "./components/People";
+import TimeCard from "./components/TimeCard";
+import data from "./data";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Le Petit Bloc</h1>
-        <em>Software craftsmanship for blockchains projects</em>
+        <div className="jumbotron jumbotron-fluid vertical-center text-center bg-dark">
+          <div className="container">
+            <Header div="header" {...data.site} />
 
-        <dl>
-            <dt>Twitter</dt>
-            <dd><a href="https://twitter.com/lepetitbloc">https://twitter.com/lepetitbloc</a></dd>
-            <dt>Github</dt>
-            <dd><a href="https://github.com/lepetitbloc">https://github.com/lepetitbloc</a></dd>
-            <dt>Dockerhub</dt>
-            <dd><a href="https://hub.docker.com/u/lepetitbloc/">https://hub.docker.com/u/lepetitbloc/</a></dd>
-            <dt>Steemit</dt>
-            <dd><a href="https://steemit.com/@lepetitbloc">https://steemit.com/@lepetitbloc</a></dd>
-            <dt>Discord</dt>
-            <dd><a href="https://discordapp.com/invite/PhdnNnf">https://discordapp.com/invite/PhdnNnf</a></dd>
-            <dt>Mail</dt>
-            <dd><a href="mailto:bonjour@lepetitbloc.net?subject=Bonjour%20Le%20Petit%20Bloc">bonjour@lepetitbloc.net</a></dd>
-        </dl>
+            <ul className="social-accounts list-inline row mt-5">
+              {data.social.map((item, key) => (
+                <li className="col d-flex justify-content-center" key={key}>
+                  <Social {...item} />
+                </li>
+              ))}
+            </ul>
 
-        <h2>About</h2>
-        <p>Our "Hello world" (in french): <a href="https://speakerdeck.com/pocky/presentation-du-projet-le-petit-bloc">https://speakerdeck.com/pocky/presentation-du-projet-le-petit-bloc</a></p>
+            <div className="col d-flex justify-content-center position-absolute fixed-bottom">
+              <Social
+                icon="fas fa-arrow-circle-down"
+                title="Follow the rabbit"
+                href="#timeline"
+              />
+            </div>
+          </div>
+        </div>
 
-        <h2>Peoples</h2>
+        <div className="container pt-5">
+          <div className="row">
+            <h2 className="my-5 col-12" id="timeline">
+              Timeline
+            </h2>
+            <ul className="timeline col-12">
+              {data.timecard.map((item, key) => (
+                <TimeCard {...item} key={key} />
+              ))}
+            </ul>
 
-        <h3>Alexandre Balmes</h3>
-        <em>aka <a href="https://twitter.com/pockystar">pockystar</a></em>
-        <p>Co-founder</p>
-        <p>PHP consultant (Domain Driven Design)</p>
-        <ul>
-            <li><a href="http://www.vanoix.com/">Vanoix</a> co-founder</li>
-            <li><a href="https://twitter.com/cryptopocky">https://twitter.com/cryptopocky</a></li>
-        </ul>
+            <h2 className="my-5 col-12">Crew</h2>
+            <div className="card-deck col-12 mt-5">
+              {data.crew.map((item, key) => <People {...item} key={key} />)}
+            </div>
+          </div>
+        </div>
 
-        <h3>Johan Dufour</h3>
-        <em>aka <a href="https://github.com/lutangar">lutangar</a></em>
-        <p>Co-founder</p>
-        <p>Full-stack senior Web developer</p>
-        <ul>
-            <li><a href="https://larriereguichet.fr">L'Arrière Guichet</a> founder</li>
-            <li><a href="https://twitter.com/lutangar">https://twitter.com/lutangar</a></li>
-        </ul>
-
-        <h2>Location</h2>
-        <p>Lyon, France</p>
+        <footer className="footer bg-dark">
+          <div className="container-fluid text-center">
+            <p>
+              Crafted with{" "}
+              <span role="img" aria-label="love">
+                ❤️
+              </span>, <a href="https://reactjs.org/">react</a>,{" "}
+              <a href="http://getbootstrap.com/">bootstrap</a> and{" "}
+              <a href="https://fontawesome.com/">font-awesome</a> in{" "}
+              <span role="img" aria-label="france">
+                🇫🇷
+              </span>.
+            </p>
+          </div>
+        </footer>
       </div>
     );
   }
