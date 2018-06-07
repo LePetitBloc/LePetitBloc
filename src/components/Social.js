@@ -10,6 +10,7 @@ class Social extends React.Component {
 }
 
 Social.propTypes = {
+  title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
 };

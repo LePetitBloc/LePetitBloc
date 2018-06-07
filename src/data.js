@@ -46,7 +46,7 @@ export default {
             <i className="fas fa-calendar-alt"></i> June 2018
           </small>
 
-          <p>After six month with a simple html page with no stylesheet. We got a new website!</p>
+          <p>After six months with a simple Html page with no stylesheets, we finally have a new website!</p>
         </Fragment>
     },
     {
@@ -61,13 +61,14 @@ export default {
           </small>
 
           <p>
-            After many discussions, we change our mind and get backs to our first ideas:
-            <ol>
-              <li>Le Petit Bloc is not only a "blockchain company". Decentralize is our keyword!</li>
-              <li>We have our own ideas on Governance, Knowledge and Economy. We want to work on theses topics!</li>
-              <li>We are disappointed by some actors. Projects need better supports. It's our role to help them and build a software craftsmanship organization.</li>
-            </ol>
+            After many discussions, we refined our ideas and found our purpose:
           </p>
+
+          <ol>
+            <li>Le Petit Bloc is not only a "blockchain company". Decentralization is the word!</li>
+            <li>We have our own ideas on Governance, Knowledge and Economy. We want to work on theses topics!</li>
+            <li>Our role is to help and build a Software Craftsmanship organization.</li>
+          </ol>
         </Fragment>
     },
     {
@@ -151,8 +152,8 @@ export default {
           </small>
 
           <p>
-            After a year of experiments, Johan and Alexandre started to talk about a their projects about some
-            "somethings" in blockchain. Codename: "dotchain".
+            After a year of experimentation, Johan and Alexandre started to talk about a common project about "something"
+            in the blockchain economy. Codename: "dotchain".
           </p>
         </Fragment>
     },

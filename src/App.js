@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Social from './components/Social';
 
-import './App.css';
 import People from "./components/People";
 import TimeCard from "./components/TimeCard";
 import data from "./data";
+import './App.css';
 
 class App extends Component {
   render() {
