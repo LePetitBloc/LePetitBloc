@@ -8,36 +8,40 @@ class People extends React.Component {
     name: PropTypes.string.isRequired,
     infos: PropTypes.array.isRequired,
     social: PropTypes.array.isRequired,
-    email: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired
   };
 
   render() {
     return (
       <div className="card testimonial-card mt-5">
-        <div className="card-up" style={ this.props.style }>
+        <div className="card-up" style={this.props.style}>
           <div className="avatar">
-            <img src={ this.props.picture } alt={this.props.name} className="rounded-circle" />
+            <img
+              src={this.props.picture}
+              alt={this.props.name}
+              className="rounded-circle"
+            />
           </div>
         </div>
 
         <div className="card-body">
-          <h4 className="card-title">{ this.props.name }</h4>
-          <small>
-            { this.props.email }
-          </small>
+          <h4 className="card-title">{this.props.name}</h4>
+          <small>{this.props.email}</small>
 
           <hr />
 
-          <p>{ this.props.infos.map((item, key) => <li key={ key }>{item}</li>) }</p>
+          <p>
+            {this.props.infos.map((item, key) => <li key={key}>{item}</li>)}
+          </p>
         </div>
 
         <div className="card-footer">
           <ul className="social-accounts list-inline row">
-            { this.props.social.map((item, key) =>
-              <li className="col d-flex justify-content-center" key={ key }>
-                <Social { ...item } className="col" />
+            {this.props.social.map((item, key) => (
+              <li className="col d-flex justify-content-center" key={key}>
+                <Social {...item} className="col" />
               </li>
-            )}
+            ))}
           </ul>
         </div>
       </div>

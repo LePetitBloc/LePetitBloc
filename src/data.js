@@ -4,7 +4,7 @@ import { Fragment } from "react";
 export default {
   site: {
     title: "Le Petit Bloc",
-    baseline: "Build a decentralised, trustable and reliable world",
+    baseline: "Build a decentralised, trustable and reliable world"
   },
 
   social: [
@@ -41,144 +41,178 @@ export default {
       badge: "fas fa-link",
       color: "warning",
       title: "New website",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> June 2018
           </small>
 
-          <p>After six months with a simple Html page with no stylesheets, we finally have a new website!</p>
+          <p>
+            After six months with a simple Html page with no stylesheets, we
+            finally have a new website!
+          </p>
         </Fragment>
+      )
     },
     {
       badge: "fab fa-github",
       title: "Default git template and truffle stack",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> May 2018
           </small>
 
-          <p>Alexandre release some tools for our projects and our external audits on "Smart Contracts".</p>
+          <p>
+            Alexandre release some tools for our projects and our external
+            audits on "Smart Contracts".
+          </p>
         </Fragment>
+      )
     },
     {
-      position : "timeline-centered",
+      position: "timeline-centered",
       color: "primary",
       badge: "fas fa-exclamation",
       title: "Le Petit Bloc is now a french SCIC project!",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> Avril 2018
           </small>
 
-          <p>
-            We refined our ideas and found our purpose:
-          </p>
+          <p>We refined our ideas and found our purpose:</p>
 
           <ol>
-            <li>Le Petit Bloc is not only a "blockchain company". Decentralization is the word!</li>
-            <li>We have our own ideas on Governance, Knowledge and Economy. We want to work on theses topics!</li>
-            <li>Our role is to help and build a Software Craftsmanship organization.</li>
+            <li>
+              Le Petit Bloc is not only a "blockchain company". Decentralization
+              is the word!
+            </li>
+            <li>
+              We have our own ideas on Governance, Knowledge and Economy. We
+              want to work on theses topics!
+            </li>
+            <li>
+              Our role is to help and build a Software Craftsmanship
+              organization.
+            </li>
           </ol>
         </Fragment>
+      )
     },
     {
-      position : "timeline-inverted",
+      position: "timeline-inverted",
       badge: "fas fa-briefcase",
       title: "First consulting mission",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> Mars 2018
           </small>
 
           <p>
-            Alexandre advise a french company to help them build the decentralization part of their project for
-            a <abbr title="Banque Publique d'Investissement">BPI</abbr> challenge.
+            Alexandre advise a french company to help them build the
+            decentralization part of their project for a{" "}
+            <abbr title="Banque Publique d'Investissement">BPI</abbr> challenge.
           </p>
         </Fragment>
+      )
     },
     {
       badge: "fab fa-github",
       title: "First pull request on Bitcoin for Johan",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> Mars 2018
           </small>
 
-          <p>Johan release his dynamic build tool for wallet and masternode and he made his
-            first pull-request on Bitcoin.</p>
+          <p>
+            Johan release his dynamic build tool for wallet and masternode and
+            he made his first pull-request on Bitcoin.
+          </p>
         </Fragment>
+      )
     },
     {
-      position : "timeline-centered",
+      position: "timeline-centered",
       color: "primary",
       badge: "fas fa-microphone",
       title: "First public talk",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> February 2018
           </small>
 
           <p>
-            First public talk about "Le Petit Bloc", a startup studio for blockchain projects.
+            First public talk about "Le Petit Bloc", a startup studio for
+            blockchain projects.
           </p>
         </Fragment>
+      )
     },
     {
-      position : "timeline-inverted",
+      position: "timeline-inverted",
       color: "warning",
       badge: "fab fa-github",
       title: "Hello Github!",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
-            <i className="fas fa-calendar-alt"></i> December 2017
+            <i className="fas fa-calendar-alt" /> December 2017
           </small>
 
-          <p>Because we <span role="img" aria-label="love">❤️</span> Open Source.</p>
+          <p>
+            Because we{" "}
+            <span role="img" aria-label="love">
+              ❤️
+            </span>{" "}
+            Open Source.
+          </p>
         </Fragment>
+      )
     },
     {
-      position : "timeline-centered",
+      position: "timeline-centered",
       color: "primary",
       badge: "far fa-comment-dots",
       title: "Project development",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> September 2017
           </small>
 
           <p>
-            Johan and Alexandre start talking about a common project around an agency
-            in the blockchain economy. Codename: "dotchain".
+            Johan and Alexandre start talking about a common project around an
+            agency in the blockchain economy. Codename: "dotchain".
           </p>
         </Fragment>
+      )
     },
     {
-      position : "timeline-inverted",
+      position: "timeline-inverted",
       badge: "fas fa-briefcase",
       title: "Beyond The Void",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> Janvier 2017
           </small>
 
           <p>
-            Johan start working with <a href="https://beyond-the-void.net/">Beyond The Void</a>, the first french ICO on Ethereum.
+            Johan start working with{" "}
+            <a href="https://beyond-the-void.net/">Beyond The Void</a>, the
+            first french ICO on Ethereum.
           </p>
         </Fragment>
+      )
     },
     {
       badge: "fas fa-briefcase",
       title: "First dApp for Johan",
-      content:
+      content: (
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"> </i> December 2016
@@ -189,13 +223,15 @@ export default {
             <a href="https://github.com/lutangar/ethereact">Ethereact</a>
           </p>
         </Fragment>
-    },
+      )
+    }
   ],
 
   crew: [
     {
       style: {
-        background: "url(https://pbs.twimg.com/profile_banners/907333229971111937/1522230076/1500x500) center/cover"
+        background:
+          "url(https://pbs.twimg.com/profile_banners/907333229971111937/1522230076/1500x500) center/cover"
       },
       picture: "https://avatars3.githubusercontent.com/u/204451?s=460&v=4",
       name: 'Alexandre "pocky" BALMES',
@@ -205,15 +241,19 @@ export default {
         "Happy husband and father"
       ],
       social: [
-        {icon: "fab fa-twitter", href:"https://twitter.com/cryptopocky"},
-        {icon: "fab fa-github", href:"https://github.com/pocky"},
-        {icon: "fab fa-linkedin", href:"https://www.linkedin.com/in/alexandrebalmes/"}
+        { icon: "fab fa-twitter", href: "https://twitter.com/cryptopocky" },
+        { icon: "fab fa-github", href: "https://github.com/pocky" },
+        {
+          icon: "fab fa-linkedin",
+          href: "https://www.linkedin.com/in/alexandrebalmes/"
+        }
       ],
       email: "3F70 833B 886B A122"
     },
     {
       style: {
-        background: "url(https://pbs.twimg.com/profile_banners/569418080/1398244280/1500x500) center/cover"
+        background:
+          "url(https://pbs.twimg.com/profile_banners/569418080/1398244280/1500x500) center/cover"
       },
       picture: "https://www.amabla.org/images/coworkers/lutangar.jpg",
       name: 'Johan "lutangar" DUFOUR',
@@ -223,11 +263,14 @@ export default {
         "Happy gardener"
       ],
       social: [
-        {icon: "fab fa-twitter", href:"https://twitter.com/lutangar"},
-        {icon: "fab fa-github", href:"https://github.com/lutangar"},
-        {icon: "fab fa-linkedin", href:"https://www.linkedin.com/in/johandufour/"}
+        { icon: "fab fa-twitter", href: "https://twitter.com/lutangar" },
+        { icon: "fab fa-github", href: "https://github.com/lutangar" },
+        {
+          icon: "fab fa-linkedin",
+          href: "https://www.linkedin.com/in/johandufour/"
+        }
       ],
       email: "johan@lepetitbloc.net"
     }
   ]
-}
+};
