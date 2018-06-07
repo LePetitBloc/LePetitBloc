@@ -8,7 +8,7 @@ class TimeCard extends React.Component {
         <div className={`timeline-badge ` + this.props.color}><i className={ this.props.badge }></i></div>
         <div className="timeline-panel">
           <div className="timeline-heading">
-            <h4 className="timeline-title">{ this.props.title }</h4>
+            <h3 className="timeline-title">{ this.props.title }</h3>
           </div>
           <div className="timeline-body">
             { this.props.content }

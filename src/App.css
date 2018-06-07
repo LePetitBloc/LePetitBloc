@@ -1,23 +1,26 @@
-html {
+body {
     font-size: 137.5%;
-    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'Source Code Pro', sans-serif;
+    color: #222;
+    line-height: 1.42857143em;
+    margin: auto;
 }
 
 a {
     color: #000;
 }
 
-h1, h2 {
-    font-family: 'Anton', sans-serif;
+h1, h2, h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.12em;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     border-bottom: 3px solid #eee;
-}
-
-body {
-    margin: auto;
 }
 
 .vertical-center {
@@ -33,12 +36,16 @@ header h1 {
 }
 
 header em {
-    font-family: 'Anton', sans-serif;
     font-style: normal;
 }
+
 .jumbotron,
 .jumbotron a {
     color: #fff
+}
+
+.fixed-bottom {
+    bottom: 20px;
 }
 
 .social-accounts a,
@@ -81,7 +88,7 @@ header em {
 
 .timeline:before {
     top: 0;
-    bottom: 0;
+    bottom: 59px;
     position: absolute;
     content: " ";
     width: 3px;
@@ -237,7 +244,7 @@ header em {
 }
 
 .timeline-title {
-    margin-top: 0;
+    margin: 10px 0 20px;
     color: inherit;
 }
 
@@ -251,8 +258,14 @@ header em {
 }
 
 .footer {
+    margin-top: 100px;
     padding: 10px;
     color: #fff;
+    font-size: .8em;
+}
+
+.footer p {
+    margin-bottom: 0;
 }
 
 .footer a {

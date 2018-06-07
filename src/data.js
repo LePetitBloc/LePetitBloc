@@ -61,7 +61,7 @@ export default {
           </small>
 
           <p>
-            After many discussions, we change our mind and get backs on our first exchanges:
+            After many discussions, we change our mind and get backs to our first ideas:
             <ol>
               <li>Le Petit Bloc is not only a "blockchain company". Decentralize is our keyword!</li>
               <li>We have our own ideas on Governance, Knowledge and Economy. We want to work on theses topics!</li>
@@ -77,9 +77,9 @@ export default {
         <Fragment>
           <small className="text-muted">
             <i className="fas fa-calendar-alt"></i> Mars 2018
-
-            <p>Alexandre release some tools for our projects and our external audits on "Smart Contracts".</p>
           </small>
+
+          <p>Alexandre release some tools for our projects and our external audits on "Smart Contracts".</p>
         </Fragment>
     },
     {

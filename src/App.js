@@ -42,7 +42,7 @@ class App extends Component {
             </ul>
 
             <h2 className="my-5 col-12">Crew</h2>
-            <div className="card-deck col-12">
+            <div className="card-deck col-12 mt-5">
               { data.crew.map((item, key) =>
                 <People { ...item } key={key} />
               )}
@@ -50,7 +50,7 @@ class App extends Component {
           </div>
         </div>
 
-        <footer className="footer mt-5 bg-dark">
+        <footer className="footer bg-dark">
           <div className="container-fluid text-center">
             <p>Build with ❤️, <a href="https://reactjs.org/">react</a>, <a href="http://getbootstrap.com/">bootstrap</a> and <a href="https://fontawesome.com/">font-awesome</a>.</p>
           </div>
