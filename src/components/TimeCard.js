@@ -17,13 +17,13 @@ class TimeCard extends React.Component {
 
   render() {
     return (
-      <li className={this.props.position}>
+      <li className={this.props.position} itemprop="subEvent">
         <div className={`timeline-badge ` + this.props.color}>
           <i className={this.props.badge} />
         </div>
-        <div className="timeline-panel">
+        <div className="timeline-panel" itemscope itemtype="http://schema.org/Event">
           <div className="timeline-heading">
-            <h3 className="timeline-title">{this.props.title}</h3>
+            <h3 className="timeline-title" itemprop="name">{this.props.title}</h3>
           </div>
           <div className="timeline-body">{this.props.content}</div>
         </div>

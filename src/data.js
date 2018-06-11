@@ -43,14 +43,16 @@ export default {
       title: "New website",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> June 2018
           </small>
 
-          <p>
-            After six months with a simple Html page with no stylesheets, we
-            finally have a new website!
-          </p>
+          <div itemprop="description">
+            <p>
+              After six months with a simple Html page with no stylesheets, we
+              finally have a new website!
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -59,14 +61,16 @@ export default {
       title: "Default git template and truffle stack",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> May 2018
           </small>
 
-          <p>
-            Alexandre release tools for projects and external
-            audits on "Smart Contracts".
-          </p>
+          <div itemProp="description">
+            <p>
+              Alexandre release tools for projects and external
+              audits on "Smart Contracts".
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -77,27 +81,29 @@ export default {
       title: "Le Petit Bloc is now a french SCIC project!",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> Avril 2018
           </small>
 
-          <p>Le Petit Bloc found its purpose:</p>
+          <div itemProp="description">
+            <p>Le Petit Bloc found its purpose:</p>
 
-          <ol>
-            <li>
-              Le Petit Bloc is not another <em>blockchain company</em>.
-            </li>
-            <li>
-              <strong>Decentralization</strong> is the key!
-            </li>
-            <li>
-              Governance, Knowledge and Economy are the topics and we have convictions.
-            </li>
-            <li>
-              Here to help and build a Software Craftsmanship
-              organization.
-            </li>
-          </ol>
+            <ol>
+              <li>
+                Le Petit Bloc is not another <em>blockchain company</em>.
+              </li>
+              <li>
+                <strong>Decentralization</strong> is the key!
+              </li>
+              <li>
+                Governance, Knowledge and Economy are the topics and we have convictions.
+              </li>
+              <li>
+                Here to help and build a Software Craftsmanship
+                organization.
+              </li>
+            </ol>
+          </div>
         </Fragment>
       )
     },
@@ -107,15 +113,17 @@ export default {
       title: "First consulting mission",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> Mars 2018
           </small>
 
-          <p>
-            Alexandre work as an advisor for a french company and help them build the
-            decentralization part of their project for a{" "}
-            <abbr title="Banque Publique d'Investissement">BPI</abbr> challenge.
-          </p>
+          <div itemProp="description">
+            <p>
+              Alexandre work as an advisor for a french company and help them build the
+              decentralization part of their project for a{" "}
+              <abbr title="Banque Publique d'Investissement">BPI</abbr> challenge.
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -124,14 +132,16 @@ export default {
       title: "First pull request on Bitcoin",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> Mars 2018
           </small>
 
-          <p>
-            Johan release his dynamic build tool for wallet and masternode and
-            he made his first pull-request on Bitcoin.
-          </p>
+          <div itemProp="description">
+            <p>
+              Johan release his dynamic build tool for wallet and masternode and
+              he made his first pull-request on Bitcoin.
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -142,14 +152,16 @@ export default {
       title: "First public talk",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> February 2018
           </small>
 
-          <p>
-            First public talk about "Le Petit Bloc", a startup studio for
-            blockchain projects.
-          </p>
+          <div itemProp="description">
+            <p>
+              First public talk about "Le Petit Bloc", a startup studio for
+              blockchain projects.
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -160,17 +172,19 @@ export default {
       title: "Hello Github!",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt" /> December 2017
           </small>
 
-          <p>
-            Because we{" "}
-            <span role="img" aria-label="love">
-              ❤️
-            </span>{" "}
-            Open Source.
-          </p>
+          <div itemProp="description">
+            <p>
+              Because we{" "}
+              <span role="img" aria-label="love">
+                ❤️
+              </span>{" "}
+              Open Source.
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -181,14 +195,16 @@ export default {
       title: "Project development",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> September 2017
           </small>
 
-          <p>
-            Johan and Alexandre start talking about a common project around an
-            agency in the blockchain economy. Codename: "dotchain".
-          </p>
+          <div itemProp="description">
+            <p>
+              Johan and Alexandre start talking about a common project around an
+              agency in the blockchain economy. Codename: "dotchain".
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -198,15 +214,17 @@ export default {
       title: "Beyond The Void",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> Janvier 2017
           </small>
 
-          <p>
-            Johan start working with{" "}
-            <a href="https://beyond-the-void.net/">Beyond The Void</a>, the
-            first french ICO on Ethereum.
-          </p>
+          <div itemProp="description">
+            <p>
+              Johan start working with{" "}
+              <a href="https://beyond-the-void.net/">Beyond The Void</a>, the
+              first french ICO on Ethereum.
+            </p>
+          </div>
         </Fragment>
       )
     },
@@ -215,14 +233,16 @@ export default {
       title: "First dApp for Johan",
       content: (
         <Fragment>
-          <small className="text-muted">
+          <small className="text-muted" itemprop="startDate">
             <i className="fas fa-calendar-alt"> </i> December 2016
           </small>
 
-          <p>
-            First Proof Of Concept with web3, React, Redux and redux-saga.<br />
-            <a href="https://github.com/lutangar/ethereact">Ethereact</a>
-          </p>
+          <div itemProp="description">
+            <p>
+              First Proof Of Concept with web3, React, Redux and redux-saga.<br />
+              <a href="https://github.com/lutangar/ethereact">Ethereact</a>
+            </p>
+          </div>
         </Fragment>
       )
     }

@@ -38,7 +38,7 @@ class App extends Component {
             <h2 className="my-5 col-12" id="timeline">
               Timeline
             </h2>
-            <ul className="timeline col-12">
+            <ul className="timeline col-12" itemscope itemtype="http://schema.org/EventSeries">
               {data.timecard.map((item, key) => (
                 <TimeCard {...item} key={key} />
               ))}
@@ -64,6 +64,7 @@ class App extends Component {
                 🇫🇷
               </span>.
             </p>
+            <p>Hosted on  <a href="https://github.com/LePetitBloc/LePetitBloc">Github</a>.</p>
           </div>
         </footer>
       </div>

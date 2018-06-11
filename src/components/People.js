@@ -13,7 +13,7 @@ class People extends React.Component {
 
   render() {
     return (
-      <div className="card testimonial-card mt-5">
+      <div className="card testimonial-card mt-5" itemscope itemtype="https://schema.org/Person">
         <div className="card-up" style={this.props.style}>
           <div className="avatar">
             <img
@@ -25,8 +25,8 @@ class People extends React.Component {
         </div>
 
         <div className="card-body">
-          <h4 className="card-title">{this.props.name}</h4>
-          <small>{this.props.email}</small>
+          <h4 className="card-title" itemprop="name">{this.props.name}</h4>
+          <small itemprop="email">{this.props.email}</small>
 
           <hr />
 

@@ -34,10 +34,10 @@ yarn-upgrade:
 	$(YARN) upgrade
 
 yarn-build: ## Build and deploy project on your host
-yarn-deploy:
+deploy:
 	yarn deploy
 
-.PHONY: kill install reset start stop clean no-docker
+.PHONY: kill install reset start stop clean deploy no-docker
 
 .DEFAULT_GOAL := help
 help:

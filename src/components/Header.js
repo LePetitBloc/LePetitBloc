@@ -10,8 +10,8 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>{this.props.title}</h1>
-        <em>{this.props.baseline}</em>
+        <h1 itemprop="name">{this.props.title}</h1>
+        <em itemprop="description">{this.props.baseline}</em>
       </header>
     );
   }
