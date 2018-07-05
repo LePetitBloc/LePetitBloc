@@ -18,12 +18,6 @@ This project is under [MIT License](LICENSE.md)
 
 See the [SUPPORT](SUPPORT.md) file.
 
-## Credits
-
-- README, CONTRIBUTING and LICENSE are heavily inspired by [project-template](https://github.com/mnapoli/project-template)
-- Issue and Pull Request templates comes from [Open-Source Templates](https://www.talater.com/open-source-templates/#/)
-- CODE_OF_CONDUCT come from [Contributor Covenant](https://www.contributor-covenant.org)
-
 ## Donation
 
 We love cryptocurrencies, consider making a donation:
