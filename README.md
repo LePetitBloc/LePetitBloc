@@ -2,9 +2,31 @@
 
 LePetitBloc Website
 
+## Installation
+``` 
+make install
+```
+
+## Usage 
+``` 
+make start 
+```
+
+Connect to [http://localhost:8082](http://localhost:8082)
+
+When you're done : 
+``` 
+make stop
+```
+
 ## Development
 ``` 
 make develop
+```
+
+## Uninstalling  
+```
+make kill 
 ```
 
 ## Code of conduct

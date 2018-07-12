@@ -7,4 +7,5 @@ services:
     volumes:
       - .:/srv/app:rw
     ports:
-      - '8081:3000'
+      -  9091:9000
+      -  8082:8000
