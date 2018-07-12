@@ -2,6 +2,29 @@
 
 LePetitBloc Website
 
+## Installation
+``` 
+make install
+```
+
+## Usage 
+``` 
+make start 
+```
+
+Connect to [http://localhost:8082](http://localhost:8082)
+
+When you're done : 
+``` 
+make stop
+```
+
+## Uninstalling  
+```
+make kill 
+```
+
+
 ## Code of conduct
 
 See the [CODE OF CONDUCT](CODE_OF_CONDUCT.md) file.

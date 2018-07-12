@@ -212,7 +212,6 @@ header em {
     float: right;
 }
 
-
 .timeline > li.timeline-inverted > .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;

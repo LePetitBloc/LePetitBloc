@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Social from "./Social";
+import React from 'react'
+import PropTypes from 'prop-types'
+import Social from './Social'
 
 class People extends React.Component {
   static propTypes = {
@@ -8,31 +8,27 @@ class People extends React.Component {
     name: PropTypes.string.isRequired,
     infos: PropTypes.array.isRequired,
     social: PropTypes.array.isRequired,
-    email: PropTypes.string.isRequired
-  };
+    email: PropTypes.string.isRequired,
+  }
 
   render() {
     return (
-      <div className="card testimonial-card mt-5" itemscope itemtype="https://schema.org/Person">
+      <div className="card testimonial-card mt-5" itemScope itemType="https://schema.org/Person">
         <div className="card-up" style={this.props.style}>
           <div className="avatar">
-            <img
-              src={this.props.picture}
-              alt={this.props.name}
-              className="rounded-circle"
-            />
+            <img src={this.props.picture} alt={this.props.name} className="rounded-circle"/>
           </div>
         </div>
 
         <div className="card-body">
-          <h4 className="card-title" itemprop="name">{this.props.name}</h4>
-          <small itemprop="email">{this.props.email}</small>
+          <h4 className="card-title" itemProp="name">
+            {this.props.name}
+          </h4>
+          <small itemProp="email">{this.props.email}</small>
 
           <hr />
 
-          <p>
-            {this.props.infos.map((item, key) => <li key={key}>{item}</li>)}
-          </p>
+          <p>{this.props.infos.map((item, key) => <li key={key}>{item}</li>)}</p>
         </div>
 
         <div className="card-footer">
@@ -45,8 +41,8 @@ class People extends React.Component {
           </ul>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default People;
+export default People
