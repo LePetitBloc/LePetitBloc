@@ -1,10 +1,10 @@
-import React from 'react'
-import Social from './Social'
-import People from './People'
-import TimeCard from './TimeCard'
-import content from '../content'
-import Header from './Header'
-import './Home.modules.css'
+import React from 'react';
+import Social from './Social';
+import People from './People';
+import TimeCard from './TimeCard';
+import content from '../content';
+import Header from './Header';
+import './Home.modules.css';
 
 const Home = () => (
   <React.Fragment>
@@ -20,7 +20,7 @@ const Home = () => (
         </ul>
 
         <div className="col d-flex justify-content-center position-absolute fixed-bottom">
-          <Social icon="fas fa-arrow-circle-down" title="Follow the rabbit" href="#timeline"/>
+          <Social icon="fas fa-arrow-circle-down" title="Follow the rabbit" href="#timeline" />
         </div>
       </div>
     </div>
@@ -31,14 +31,14 @@ const Home = () => (
           Timeline
         </h2>
         <ul className="timeline col-12" itemScope itemType="http://schema.org/EventSeries">
-          {content.timecard.map((item, key) => <TimeCard {...item} key={key}/>)}
+          {content.timecard.map((item, key) => <TimeCard {...item} key={key} />)}
         </ul>
 
         <h2 className="my-5 col-12">Crew</h2>
-        <div className="card-deck col-12 mt-5">{content.crew.map((item, key) => <People {...item} key={key}/>)}</div>
+        <div className="card-deck col-12 mt-5">{content.crew.map((item, key) => <People {...item} key={key} />)}</div>
       </div>
     </div>
   </React.Fragment>
-)
+);
 
-export default Home
+export default Home;

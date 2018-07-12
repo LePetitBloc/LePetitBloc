@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class TimeCard extends React.Component {
   static propTypes = {
@@ -8,12 +8,12 @@ class TimeCard extends React.Component {
     badge: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     content: PropTypes.node.isRequired,
-  }
+  };
 
   static defaultProps = {
     position: '',
     color: '',
-  }
+  };
 
   render() {
     return (
@@ -30,8 +30,8 @@ class TimeCard extends React.Component {
           <div className="timeline-body">{this.props.content}</div>
         </div>
       </li>
-    )
+    );
   }
 }
 
-export default TimeCard
+export default TimeCard;

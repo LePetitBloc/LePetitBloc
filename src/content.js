@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 
 export default {
   site: {
@@ -267,4 +267,4 @@ export default {
       email: 'johan@lepetitbloc.net',
     },
   ],
-}
+};

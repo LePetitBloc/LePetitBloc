@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => (
   <footer className="footer bg-dark">
@@ -18,6 +18,6 @@ const Footer = () => (
       </p>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Social from './Social'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Social from './Social';
 
 class People extends React.Component {
   static propTypes = {
@@ -9,14 +9,14 @@ class People extends React.Component {
     infos: PropTypes.array.isRequired,
     social: PropTypes.array.isRequired,
     email: PropTypes.string.isRequired,
-  }
+  };
 
   render() {
     return (
       <div className="card testimonial-card mt-5" itemScope itemType="https://schema.org/Person">
         <div className="card-up" style={this.props.style}>
           <div className="avatar">
-            <img src={this.props.picture} alt={this.props.name} className="rounded-circle"/>
+            <img src={this.props.picture} alt={this.props.name} className="rounded-circle" />
           </div>
         </div>
 
@@ -41,8 +41,8 @@ class People extends React.Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default People
+export default People;
