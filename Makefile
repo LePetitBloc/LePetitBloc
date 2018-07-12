@@ -23,6 +23,9 @@ reset: kill install
 start: ## Start the project
 	$(DOCKER_COMPOSE) start
 
+develop: ## Start the project showing logs
+	$(DOCKER_COMPOSE) up
+
 stop: ## Stop the project
 	$(DOCKER_COMPOSE) stop
 
@@ -37,7 +40,7 @@ yarn-build: ## Build and deploy project on your host
 deploy:
 	yarn deploy
 
-.PHONY: kill install reset start stop clean deploy no-docker
+.PHONY: kill install reset start stop clean deploy no-docker build develop
 
 .DEFAULT_GOAL := help
 help:

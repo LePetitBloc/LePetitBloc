@@ -19,11 +19,15 @@ When you're done :
 make stop
 ```
 
+## Development
+``` 
+make develop
+```
+
 ## Uninstalling  
 ```
 make kill 
 ```
-
 
 ## Code of conduct
 
