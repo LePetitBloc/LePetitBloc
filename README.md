@@ -2,6 +2,11 @@
 
 LePetitBloc Website
 
+## Development
+``` 
+make develop
+```
+
 ## Code of conduct
 
 See the [CODE OF CONDUCT](CODE_OF_CONDUCT.md) file.
