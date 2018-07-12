@@ -7,7 +7,7 @@ import Header from './Header';
 import './Home.modules.css';
 
 const Home = () => (
-  <React.Fragment>
+  <>
     <div className="jumbotron jumbotron-fluid vertical-center text-center bg-dark">
       <div className="container">
         <Header div="header" {...content.site} />
@@ -38,7 +38,7 @@ const Home = () => (
         <div className="card-deck col-12 mt-5">{content.crew.map((item, key) => <People {...item} key={key} />)}</div>
       </div>
     </div>
-  </React.Fragment>
+  </>
 );
 
 export default Home;
