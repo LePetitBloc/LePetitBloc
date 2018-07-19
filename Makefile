@@ -1,4 +1,6 @@
 DOCKER_COMPOSE = docker-compose
+DOCKER_ENV ?= prod
+
 YARN = $(DOCKER_COMPOSE) exec app yarn
 
 ##
@@ -6,8 +8,8 @@ YARN = $(DOCKER_COMPOSE) exec app yarn
 ##-------
 ##
 
-build:
-	$(DOCKER_COMPOSE) up -d --build
+build: ## Build the project
+	$(DOCKER_COMPOSE) build
 
 kill:
 	$(DOCKER_COMPOSE) stop
@@ -21,10 +23,11 @@ reset: ## Stop and start a fresh install of the project
 reset: kill install
 
 start: ## Start the project
-	$(DOCKER_COMPOSE) start
-
-develop: ## Start the project showing logs
+ifeq ($(DOCKER_ENV), prod)
+	$(DOCKER_COMPOSE) up -d
+else
 	$(DOCKER_COMPOSE) up
+endif
 
 stop: ## Stop the project
 	$(DOCKER_COMPOSE) stop
@@ -40,7 +43,10 @@ yarn-build: ## Build and deploy project on your host
 deploy:
 	yarn deploy
 
-.PHONY: kill install reset start stop clean deploy no-docker build develop
+docker-logs: ## Read the docker logs
+	$(DOCKER_COMPOSE) logs -f
+
+.PHONY: kill install reset start stop clean deploy no-docker build
 
 .DEFAULT_GOAL := help
 help:

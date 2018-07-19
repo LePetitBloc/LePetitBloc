@@ -20,8 +20,11 @@ make stop
 ```
 
 ## Development
-``` 
-make develop
+
+If you want to run docker in dev (for reading log output for example), set `DOCKER_ENV` env variables to `dev`.
+
+```
+export DOCKER_ENV=dev
 ```
 
 ## Uninstalling  
