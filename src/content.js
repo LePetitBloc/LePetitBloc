@@ -36,6 +36,22 @@ export default {
 
   timecard: [
     {
+      badge: 'fab fa-github',
+      title: 'We have successfully complete the Consensys Developer Program 🎉',
+      content: (
+        <Fragment>
+          <small className="text-muted" itemProp="startDate">
+            <i className="fas fa-calendar-alt"> </i> June - October 2018
+          </small>
+
+          <div itemProp="description">
+            <p>Consensys Developer Program is a complete end-to-end online Ethereum course.</p>
+            <p>We built two complete dApps. Johan did the light-version of one of our project and Alexandre did a decentralised Qora-like with tokenized incentive.</p>
+          </div>
+        </Fragment>
+      ),
+    },
+    {
       position: 'timeline-inverted',
       badge: 'fas fa-link',
       color: 'warning',
