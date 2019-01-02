@@ -1,5 +1,5 @@
 DOCKER_COMPOSE = docker-compose
-YARN = $(DOCKER_COMPOSE) exec app yarn
+JS = $(DOCKER_COMPOSE) exec app npm
 
 ##
 ##Project
@@ -32,13 +32,13 @@ stop: ## Stop the project
 no-docker:
 	$(eval DOCKER_COMPOSE := \#)
 
-yarn-upgrade: ## Upgrade dependencies
-yarn-upgrade:
-	$(YARN) upgrade
+update: ## Upgrade dependencies
+update:
+	$(JS) update
 
 yarn-build: ## Build and deploy project on your host
 deploy:
-	yarn deploy
+	$(JS) deploy
 
 .PHONY: kill install reset start stop clean deploy no-docker build develop
 
